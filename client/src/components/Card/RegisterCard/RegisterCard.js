@@ -38,7 +38,7 @@ const RegisterCard = () => {
     if (Object.keys(newErrors).length > 0) return;
 
     try {
-      const res = await fetch('http://localhost:5000/api/auth/register', {
+      const res = await fetch('https://e-shop-96gh.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
